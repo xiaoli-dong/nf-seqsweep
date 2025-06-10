@@ -13,7 +13,7 @@
 ## Introduction
 
 **xiaoli-dong/seqsweep** is a bioinformatics pipeline that ...
-
+A nf-seqsweep analysis output demo page can be found at: https://xiaoli-dong.github.io/nf-seqsweep/
 <!-- TODO nf-core:
    Complete this sentence with a 2-3 sentence summary of what types of data the pipeline ingests, a brief overview of the
    major pipeline sections and the types of output it produces. You're giving an overview to someone new
