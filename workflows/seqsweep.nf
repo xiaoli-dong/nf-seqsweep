@@ -10,6 +10,8 @@ include { paramsSummaryMultiqc   } from '../subworkflows/nf-core/utils_nfcore_pi
 include { softwareVersionsToYAML } from '../subworkflows/nf-core/utils_nfcore_pipeline'
 include { methodsDescriptionText } from '../subworkflows/local/utils_nfcore_seqsweep_pipeline'
 
+include { QC_ILLUMINA } from '../subworkflows/local/qc_illumina'
+
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     RUN MAIN WORKFLOW
@@ -24,15 +26,26 @@ workflow SEQSWEEP {
 
     ch_versions = Channel.empty()
     ch_multiqc_files = Channel.empty()
+    ch_samplesheet.view()
     //
     // MODULE: Run FastQC
     //
-    FASTQC (
-        ch_samplesheet
-    )
-    ch_multiqc_files = ch_multiqc_files.mix(FASTQC.out.zip.collect{it[1]})
-    ch_versions = ch_versions.mix(FASTQC.out.versions.first())
+    // FASTQC (
+    //     ch_samplesheet
+    // )
+    // ch_multiqc_files = ch_multiqc_files.mix(FASTQC.out.zip.collect{it[1]})
+    // ch_versions = ch_versions.mix(FASTQC.out.versions.first())
 
+    QC_ILLUMINA(
+            ch_samplesheet,
+            [],
+            params.hostile_ref_dir,
+            params.hostile_ref_name
+            //PREPARE_REFERENCES.out.ch_hostile_ref_bowtie2
+    )
+    ch_multiqc_files = ch_multiqc_files.mix(QC_ILLUMINA.out.multiqc_files.collect{it[1]})
+    QC_ILLUMINA.out.versions.view()
+    ch_versions = ch_versions.mix(QC_ILLUMINA.out.versions)
     //
     // Collate and save software versions
     //

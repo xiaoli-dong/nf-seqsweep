@@ -6,7 +6,7 @@
     Github : https://github.com/xiaoli-dong/seqsweep
 ----------------------------------------------------------------------------------------
 */
-
+nextflow.enable.dsl = 2
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     IMPORT FUNCTIONS / MODULES / SUBWORKFLOWS / WORKFLOWS
