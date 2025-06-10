@@ -1,0 +1,132 @@
+topmatch_tablecol = [
+  {
+    "title": "Sample",
+    "data": "Sample"
+  },
+  {
+    "title": "Match1",
+    "data": "Match1"
+  },
+  {
+    "title": "Count1",
+    "data": "count1"
+  },
+  {
+    "title": "Perc1",
+    "data": "perc1"
+  },
+  {
+    "title": "Match2",
+    "data": "Match2"
+  },
+  {
+    "title": "Count2",
+    "data": "count2"
+  },
+  {
+    "title": "Perc2",
+    "data": "perc2"
+  },
+  {
+    "title": "Match3",
+    "data": "Match3"
+  },
+  {
+    "title": "Count3",
+    "data": "count3"
+  },
+  {
+    "title": "Perc3",
+    "data": "perc3"
+  },
+  {
+    "title": "Match4",
+    "data": "Match4"
+  },
+  {
+    "title": "Count4",
+    "data": "count4"
+  },
+  {
+    "title": "Perc4",
+    "data": "perc4"
+  }
+]
+
+topmatch_data = [
+  {
+    "Sample": "sample2",
+    "Match1": "Streptococcus_pneumoniae",
+    "count1": 82366,
+    "perc1": 75.61,
+    "Match2": "Streptococcus_mitis",
+    "count2": 356,
+    "perc2": 0.32,
+    "Match3": "Streptococcus_oralis",
+    "count3": 128,
+    "perc3": 0.11,
+    "Match4": "Streptococcus_gwangjuensis",
+    "count4": 87,
+    "perc4": 0.08
+  },
+  {
+    "Sample": "flub",
+    "Match1": "Betainfluenzavirus_influenzae",
+    "count1": 92133,
+    "perc1": 91.86,
+    "Match2": "Homo_sapiens",
+    "count2": 61,
+    "perc2": 0.06,
+    "Match3": "Corynebacterium_accolens",
+    "count3": 9,
+    "perc3": 0.01,
+    "Match4": "Corynebacterium_propinquum",
+    "count4": 1,
+    "perc4": 0.0
+  },
+  {
+    "Sample": "flua",
+    "Match1": "Alphainfluenzavirus_influenzae",
+    "count1": 328576,
+    "perc1": 319.51,
+    "Match2": "Homo_sapiens",
+    "count2": 913,
+    "perc2": 0.89,
+    "Match3": "Citrobacter_koseri",
+    "count3": 544,
+    "perc3": 0.53,
+    "Match4": "Clostridium_cadaveris",
+    "count4": 27,
+    "perc4": 0.03
+  },
+  {
+    "Sample": "sample1",
+    "Match1": "Streptococcus_pyogenes",
+    "count1": 350083,
+    "perc1": 81.65,
+    "Match2": "Streptococcus_dysgalactiae",
+    "count2": 908,
+    "perc2": 0.21,
+    "Match3": "Streptococcus_canis",
+    "count3": 198,
+    "perc3": 0.05,
+    "Match4": "Streptococcus_agalactiae",
+    "count4": 150,
+    "perc4": 0.03
+  },
+  {
+    "Sample": "measle",
+    "Match1": "Methylorubrum_extorquens",
+    "count1": 23688,
+    "perc1": 4.43,
+    "Match2": "Methylobacterium_fujisawaense",
+    "count2": 14557,
+    "perc2": 2.72,
+    "Match3": "Methylorubrum_populi",
+    "count3": 13351,
+    "perc3": 2.49,
+    "Match4": "Delftia_acidovorans",
+    "count4": 7159,
+    "perc4": 1.34
+  }
+]
