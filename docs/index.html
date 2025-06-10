@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>nf-seqsweep: qc summary</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/dataTables.fixedColumns.min.js"></script>
+  <script type="text/javascript" src="data/reads_illumina.qc_report.json"></script>
+
+  <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.5/jstree.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  <script src="https://rawgit.com/adamjimenez/jstree-table/master/jstreetable.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.5/themes/default/style.min.css" />
+
+
+  <script type="text/javascript" src="data/taxon.kraken2_mpa.json"></script>
+<script type="text/javascript" src="data/reads_illumina.topmatches.json"></script>
+  <script type="text/javascript" class="init">
+
+    $(document).ready(function () {
+      $('#qctable').DataTable({
+        "iDisplayLength": 50,
+        "aLengthMenu": [[25, 50, 100, 500, 1000, -1], [25, 50, 100, 500, 1000, "All"]],
+        scrollY: "700px",
+        scrollX: true,
+        scrollCollapse: true,
+        fixedColumns: { leftColumns: 1 },
+        "aaData": data,
+        "columns": tablecol
+      });
+      $('#kraken2topmatchtable').DataTable({
+        "iDisplayLength": 50,
+        "aLengthMenu": [[25, 50, 100, 500, 1000, -1], [25, 50, 100, 500, 1000, "All"]],
+        scrollY: "700px",
+        scrollX: true,
+        scrollCollapse: true,
+        fixedColumns: { leftColumns: 1 },
+        "aaData": topmatch_data,
+        "columns": topmatch_tablecol
+      });
+    });
+  </script>
+</head>
+
+<body class="wide comments example">
+  <div id="outform">
+    <!-- div class="jumbotron text-center mb-0 mt-5">
+      <h1>nf-seqsweep:NGS data quality control pipeline</h1>
+    </div-->
+    <nav class="site-header py-0 mb-5">
+      <div class="container d-flex justify-content-end">
+        <a class="pl-4 d-none d-md-inline-block" href="index.html">Home</a>
+        <a class="pl-4 d-none d-md-inline-block" href="help.html">Help</a>
+      </div>
+    </nav>
+    <div class="content">
+      <h1>nf-seqsweep html summary report</h1>
+      <p>All data displayed on this page were generated using the nf-seqsweep Nextflow pipeline for high-throughput
+        sequencing quality control and taxonomic classification. This is part of a public health surveillance workflow.
+      </p>
+    </div>
+    <div style="height:50px;"></div>
+    <div class="content">
+      <h2>QC Summary</h2>
+      <table id="qctable" class="stripe row-border order-column cell-border"
+        style="width: 100%; word-wrap:break-word;table-layout: fixed;">
+        <thead>
+        </thead>
+        <tfoot>
+        </tfoot>
+      </table>
+    </div>
+    <div style="height:50px;"></div>
+    <div class="content">
+      <h2>Kraken2 classification summary</h2>
+      <p>classification profile interactive view can be accessed from <a href="html/taxontree_kraken2.html">jsTree view</a>
+      </p>
+      <table id="kraken2topmatchtable" class="stripe row-border order-column cell-border"
+        style="width: 100%; word-wrap:break-word;table-layout: fixed;">
+        <thead>
+        </thead>
+        <tfoot>
+        </tfoot>
+      </table>
+    </div>
+    <div style="height:50px;"></div>
+    <div class="content">
+      <h2>Software versions</h2>
+      <p>All the programs and versions used in nf-seqweep can be accessed <a href="../pipeline_info/seqsweep_software_mqc_versions.yml">seqsweep_software_mqc_versions.yml</p>
+
+    </div>
+
+    <div style="height:50px;"></div>
+    <footer>
+      <div class="col-xs-12 mt-5">
+        <!--Footer Bottom-->
+        <p class="text-center">Problems? Questions? Suggestions? Please contact <a
+            href="mailto:xdong.dong@albertaprecisionlabs.ca">Xiaoli Dong</a></p>
+        <p class="text-center"><a href="https://www.albertahealthservices.ca/lab/page3317.aspx">Provincial Laboratory
+            for Public Health - South</a> at <a href="https://www.albertaprecisionlabs.ca/">Alberta Precision
+            Laboratories</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
