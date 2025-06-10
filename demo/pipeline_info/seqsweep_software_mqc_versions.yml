@@ -1,0 +1,30 @@
+FASTP:
+  fastp: 0.24.0
+HOSTILE_CLEAN:
+  hostile: 2.0.0
+KRAKEN2_KRAKEN2:
+  kraken2: 2.1.5
+KRAKENTOOLS_COMBINEKREPORTS:
+  combine_kreports.py: 1.2
+KRAKENTOOLS_COMBINEMPA_COUNT:
+  combine_kreports.py: 1.2
+KRAKENTOOLS_KREPORT2MPA:
+  combine_kreports.py: 1.2
+REPORT_STATS:
+  python: 3.10.6
+  pandas: 1.4.3
+Workflow:
+    xiaoli-dong/seqsweep: v1.0.0dev
+    Nextflow: 24.04.4
+concat_stats_report:
+  csvtk: 0.31.0
+fastqc_input:
+  fastqc: 0.12.1
+kraken2mpa_to_json_for_jstree:
+  python: 3.10.6
+  pandas: 1.4.3
+qcreport_to_json_for_datatable:
+  python: 3.10.6
+  pandas: 1.4.3
+stats_input:
+  seqkit: 2.6.0

@@ -1,0 +1,22 @@
+[
+    {
+        "version": "2.0.0",
+        "aligner": "bowtie2",
+        "index": "hostile2/human-t2t-hla.argos-bacteria-985_rs-viral-202401_ml-phage-202401",
+        "options": [
+            "reorder"
+        ],
+        "fastq1_in_name": "flub_1.fastp.fastq.gz",
+        "fastq1_in_path": "/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/65/10745ffff66908c9bb5b48b02a945c/flub_1.fastp.fastq.gz",
+        "reads_in": 203444,
+        "reads_out": 200578,
+        "reads_removed": 2866,
+        "reads_removed_proportion": 0.01409,
+        "fastq2_in_name": "flub_2.fastp.fastq.gz",
+        "fastq2_in_path": "/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/65/10745ffff66908c9bb5b48b02a945c/flub_2.fastp.fastq.gz",
+        "fastq1_out_name": "flub_1.fastp.clean_1.fastq.gz",
+        "fastq1_out_path": "cleaned_reads/flub_1.fastp.clean_1.fastq.gz",
+        "fastq2_out_name": "flub_2.fastp.clean_2.fastq.gz",
+        "fastq2_out_path": "cleaned_reads/flub_2.fastp.clean_2.fastq.gz"
+    }
+]

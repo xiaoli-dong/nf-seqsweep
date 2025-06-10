@@ -1,0 +1,8 @@
+[2025-06-03 10:39:36,998] multiqc.config                                     [INFO   ]  Loading config settings from: multiqc_config.yml
+[2025-06-03 10:39:37,501] multiqc.core.version_check                         [WARNING]  MultiQC Version v1.29 now available!
+[2025-06-03 10:39:37,501] multiqc.core.file_search                           [INFO   ]  Search path: /nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88
+[2025-06-03 10:39:37,706] multiqc.modules.custom_content.custom_content      [INFO   ]  xiaoli-dong-seqsweep-methods-description: Found 1 sample (html)
+[2025-06-03 10:39:37,706] multiqc.modules.custom_content.custom_content      [INFO   ]  xiaoli-dong-seqsweep-summary: Found 1 sample (html)
+[2025-06-03 10:39:37,718] multiqc.modules.fastp.fastp                        [INFO   ]  Found 5 reports
+[2025-06-03 10:39:37,912] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 10 reports
+[2025-06-03 10:39:38,016] multiqc.core.write_results                         [INFO   ]  Rendering plots. Export plots to formats png, svg, pdf is requested, so it might take a while. To disable plot export, set `export_plots: false` in config, or remove the `--export-plots` command line flag

@@ -1,0 +1,2 @@
+sample,input_num_seqs,input_sum_len,input_min_len,input_avg_len,input_max_len,trim_num_seqs,trim_sum_len,trim_min_len,trim_avg_len,trim_max_len,trim_num_seqs_passed_pct,trim_sum_len_passed_pct,dehost_num_seqs,dehost_sum_len,dehost_min_len,dehost_avg_len,dehost_max_len,dehost_num_seqs_passed_pct,dehost_sum_len_passed_pct
+flua,304734,43440970,35,142.6,151,296478,42587580,50,143.6,151,97.29,98.04,205666,29729459,50,144.6,151,67.49,68.44

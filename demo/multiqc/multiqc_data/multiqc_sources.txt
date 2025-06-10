@@ -1,0 +1,16 @@
+Module	Section	Sample Name	Source
+fastp	all_sections	flua	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/15/flua.fastp.json
+fastp	all_sections	measle	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/17/measle.fastp.json
+fastp	all_sections	flub	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/14/flub.fastp.json
+fastp	all_sections	sample1	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/16/sample1.fastp.json
+fastp	all_sections	sample2	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/13/sample2.fastp.json
+FastQC	all_sections	sample2_2	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/19/sample2_2_fastqc.zip
+FastQC	all_sections	sample1_1	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/11/sample1_1_fastqc.zip
+FastQC	all_sections	flub_2	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/21/flub_2_fastqc.zip
+FastQC	all_sections	flub_1	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/20/flub_1_fastqc.zip
+FastQC	all_sections	measle_1	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/26/measle_1_fastqc.zip
+FastQC	all_sections	flua_1	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/22/flua_1_fastqc.zip
+FastQC	all_sections	sample2_1	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/18/sample2_1_fastqc.zip
+FastQC	all_sections	flua_2	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/23/flua_2_fastqc.zip
+FastQC	all_sections	sample1_2	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/12/sample1_2_fastqc.zip
+FastQC	all_sections	measle_2	/nfs/Genomics_DEV/projects/xdong/deve/nf-seqsweep/test/work/c6/d9a8df7b9947f529729177881afc88/6/measle_2_fastqc.zip

@@ -1,0 +1,6 @@
+Sample,Match1,count1,perc1,Match2,count2,perc2,Match3,count3,perc3,Match4,count4,perc4
+sample2,Streptococcus_pneumoniae,82366,75.61,Streptococcus_mitis,356,0.32,Streptococcus_oralis,128,0.11,Streptococcus_gwangjuensis,87,0.08
+flub,Betainfluenzavirus_influenzae,92133,91.86,Homo_sapiens,61,0.06,Corynebacterium_accolens,9,0.01,Corynebacterium_propinquum,1,0.0
+flua,Alphainfluenzavirus_influenzae,328576,319.51,Homo_sapiens,913,0.89,Citrobacter_koseri,544,0.53,Clostridium_cadaveris,27,0.03
+sample1,Streptococcus_pyogenes,350083,81.65,Streptococcus_dysgalactiae,908,0.21,Streptococcus_canis,198,0.05,Streptococcus_agalactiae,150,0.03
+measle,Methylorubrum_extorquens,23688,4.43,Methylobacterium_fujisawaense,14557,2.72,Methylorubrum_populi,13351,2.49,Delftia_acidovorans,7159,1.34

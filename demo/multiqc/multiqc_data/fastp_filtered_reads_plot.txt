@@ -1,0 +1,6 @@
+Sample	Passed Filter	Low Quality	Too Many N	Too Short	Too Long
+flua	296478.0	3852.0	682.0	3722.0	0.0
+flub	203444.0	3890.0	598.0	4428.0	0.0
+measle	1070164.0	44560.0	3014.0	31616.0	0.0
+sample1	857490.0	8438.0	1596.0	940.0	0.0
+sample2	217822.0	7974.0	404.0	788.0	0.0

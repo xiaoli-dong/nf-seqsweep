@@ -1,0 +1,47 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 152367
+total bases: 21719412
+Q20 bases: 20442999(94.1232%)
+Q30 bases: 20089306(92.4947%)
+
+Read2 before filtering:
+total reads: 152367
+total bases: 21721558
+Q20 bases: 20414497(93.9827%)
+Q30 bases: 20033703(92.2296%)
+
+Read1 after filtering:
+total reads: 148239
+total bases: 21298114
+Q20 bases: 20146518(94.593%)
+Q30 bases: 19807327(93.0004%)
+
+Read2 after filtering:
+total reads: 148239
+total bases: 21289466
+Q20 bases: 20134764(94.5762%)
+Q30 bases: 19771014(92.8676%)
+
+Filtering result:
+reads passed filter: 296478
+reads failed due to low quality: 3852
+reads failed due to too many N: 682
+reads failed due to too short: 3722
+reads with adapter trimmed: 908
+bases trimmed due to adapters: 31355
+
+Duplication rate: 8.91335%
+
+Insert size peak (evaluated by paired-end reads): 221
+
+JSON report: flua.fastp.json
+HTML report: flua.fastp.html
+
+fastp --in1 flua_1.fastq.gz --in2 flua_2.fastq.gz --out1 flua_1.fastp.fastq.gz --out2 flua_2.fastp.fastq.gz --json flua.fastp.json --html flua.fastp.html --thread 4 --detect_adapter_for_pe --cut_front --cut_front_window_size=1 --cut_front_mean_quality=10 --cut_tail --cut_tail_window_size=1 --cut_tail_mean_quality=10 --n_base_limit 0 --qualified_quality_phred 20 --average_qual 20 --length_required 50 --detect_adapter_for_pe 
+fastp v0.24.0, time used: 11 seconds

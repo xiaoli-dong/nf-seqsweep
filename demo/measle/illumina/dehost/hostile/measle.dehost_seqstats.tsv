@@ -1,0 +1,2 @@
+file	format	type	num_seqs	sum_len	min_len	avg_len	max_len
+measle	FASTQ	DNA	1070108	147120353	50	137.5	151

@@ -1,0 +1,255 @@
+<!--
+  ~ Copyright 2013-2024, Seqera Labs
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+<pre class="mermaid" style="text-align: center;">
+flowchart TB
+    subgraph " "
+    v2["Channel.fromList"]
+    v29["adapter_fasta"]
+    v30["discard_trimmed_pass"]
+    v31["save_trimmed_fail"]
+    v32["save_merged"]
+    v49["aligner"]
+    v50["reference_dir"]
+    v51["reference_name"]
+    v66["db"]
+    v67["save_output_fastqs"]
+    v68["save_reads_assignment"]
+    v88["in_format"]
+    v89["out_format"]
+    v126["in_format"]
+    v127["out_format"]
+    v130["Channel.fromPath"]
+    v131["targetName"]
+    v149["Channel.of"]
+    v152["Channel.fromPath"]
+    v155["ch_workflow_summary"]
+    v159["ch_methods_description"]
+    v166["replace_names"]
+    v167["sample_names"]
+    end
+    subgraph " "
+    v10[" "]
+    v16[" "]
+    v18[" "]
+    v26[" "]
+    v34[" "]
+    v35[" "]
+    v36[" "]
+    v37[" "]
+    v42[" "]
+    v43[" "]
+    v45[" "]
+    v53[" "]
+    v58[" "]
+    v59[" "]
+    v60[" "]
+    v62[" "]
+    v65[" "]
+    v70[" "]
+    v71[" "]
+    v72[" "]
+    v80[" "]
+    v82[" "]
+    v84[" "]
+    v91[" "]
+    v98[" "]
+    v108[" "]
+    v117[" "]
+    v119[" "]
+    v133[" "]
+    v135[" "]
+    v138[" "]
+    v139[" "]
+    v144[" "]
+    v169[" "]
+    v170[" "]
+    v171[" "]
+    v174[" "]
+    end
+    subgraph XIAOLIDONG_SEQSWEEP
+    subgraph SEQSWEEP
+    subgraph QC_ILLUMINA
+    v17([fastqc_input])
+    v22([stats_input])
+    v33([FASTP])
+    v41([fastqc_trimmed_with_fastp])
+    v44([stats_trimmed_with_fastp])
+    v52([HOSTILE_CLEAN])
+    v57([fastqc_dehost])
+    v61([stats_dehost])
+    v69([KRAKEN2_KRAKEN2])
+    v74([KRAKENTOOLS_KREPORT2MPA])
+    v79([CSVTK_JOIN_MPA_COUNT_PERC])
+    v81([KRAKENTOOLS_GETTOPMATCHES])
+    v90([concat_topmatches])
+    v97([KRAKENTOOLS_COMBINEKREPORTS])
+    v103([KRAKENTOOLS_COMBINEMPA_COUNT])
+    v107([KRAKENTOOLS_COMBINEMPA_PERC])
+    v116([CSVTK_JOIN_SUMMARY_REPORT])
+    v118([kraken2mpa_to_json_for_jstree])
+    v121([REPORT_STATS])
+    v128([concat_stats_report])
+    v132([HTML_COPYDIR])
+    v134([qcreport_to_json_for_datatable])
+    v137([topmatches_to_json_for_datatable])
+    v3(( ))
+    v40(( ))
+    v47(( ))
+    v56(( ))
+    v76(( ))
+    v83(( ))
+    v85(( ))
+    v92(( ))
+    v100(( ))
+    v104(( ))
+    v112(( ))
+    v123(( ))
+    end
+    v168([MULTIQC])
+    v19(( ))
+    v163(( ))
+    v164(( ))
+    v165(( ))
+    v172(( ))
+    end
+    end
+    v2 --> v3
+    v3 --> v10
+    v3 --> v16
+    v3 --> v17
+    v17 --> v18
+    v17 --> v19
+    v3 --> v22
+    v22 --> v19
+    v22 --> v47
+    v19 --> v26
+    v29 --> v33
+    v30 --> v33
+    v31 --> v33
+    v32 --> v33
+    v3 --> v33
+    v33 --> v37
+    v33 --> v36
+    v33 --> v35
+    v33 --> v34
+    v33 --> v19
+    v33 --> v40
+    v40 --> v41
+    v41 --> v43
+    v41 --> v42
+    v41 --> v19
+    v40 --> v44
+    v44 --> v45
+    v44 --> v47
+    v49 --> v52
+    v50 --> v52
+    v51 --> v52
+    v40 --> v52
+    v52 --> v53
+    v52 --> v19
+    v52 --> v56
+    v56 --> v57
+    v57 --> v60
+    v57 --> v59
+    v57 --> v58
+    v56 --> v61
+    v61 --> v62
+    v61 --> v47
+    v47 --> v65
+    v66 --> v69
+    v67 --> v69
+    v68 --> v69
+    v56 --> v69
+    v69 --> v72
+    v69 --> v71
+    v69 --> v70
+    v69 --> v74
+    v69 --> v19
+    v69 --> v92
+    v74 --> v19
+    v74 --> v76
+    v74 --> v100
+    v74 --> v104
+    v76 --> v79
+    v79 --> v81
+    v79 --> v80
+    v81 --> v82
+    v81 --> v83
+    v81 --> v85
+    v83 --> v84
+    v88 --> v90
+    v89 --> v90
+    v85 --> v90
+    v90 --> v137
+    v90 --> v91
+    v92 --> v97
+    v97 --> v98
+    v97 --> v19
+    v100 --> v103
+    v103 --> v19
+    v103 --> v112
+    v104 --> v107
+    v107 --> v108
+    v107 --> v112
+    v112 --> v116
+    v116 --> v118
+    v116 --> v117
+    v118 --> v119
+    v118 --> v19
+    v47 --> v121
+    v121 --> v19
+    v121 --> v123
+    v126 --> v128
+    v127 --> v128
+    v123 --> v128
+    v128 --> v134
+    v128 --> v19
+    v130 --> v132
+    v131 --> v132
+    v132 --> v133
+    v134 --> v135
+    v134 --> v19
+    v137 --> v139
+    v137 --> v138
+    v19 --> v144
+    v149 --> v19
+    v152 --> v163
+    v155 --> v19
+    v159 --> v19
+    v166 --> v168
+    v167 --> v168
+    v19 --> v168
+    v163 --> v168
+    v164 --> v168
+    v165 --> v168
+    v168 --> v171
+    v168 --> v170
+    v168 --> v169
+    v168 --> v172
+    v172 --> v174
+
+</pre>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+</body>
+</html>

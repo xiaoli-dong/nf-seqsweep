@@ -1,0 +1,49 @@
+Detecting adapter sequence for read1...
+>I7_Nextera_Transposase_1 | >Trans2_rc | >I7_Nextera_Transposase_1 | >Trans2_rc
+CTGTCTCTTATACACATCTCCGAGCCCACGAGAC
+
+Detecting adapter sequence for read2...
+>I5_Nextera_Transposase_1 | >Trans1_rc | >I5_Nextera_Transposase_1 | >Trans1_rc
+CTGTCTCTTATACACATCTGACGCTGCCGACGA
+
+Read1 before filtering:
+total reads: 434232
+total bases: 64700568
+Q20 bases: 61946879(95.7439%)
+Q30 bases: 61079993(94.4041%)
+
+Read2 before filtering:
+total reads: 434232
+total bases: 64700568
+Q20 bases: 61831510(95.5656%)
+Q30 bases: 60968467(94.2317%)
+
+Read1 after filtering:
+total reads: 428745
+total bases: 63377193
+Q20 bases: 60852646(96.0166%)
+Q30 bases: 60016418(94.6972%)
+
+Read2 after filtering:
+total reads: 428745
+total bases: 63377695
+Q20 bases: 60823214(95.9694%)
+Q30 bases: 59995453(94.6634%)
+
+Filtering result:
+reads passed filter: 857490
+reads failed due to low quality: 8438
+reads failed due to too many N: 1596
+reads failed due to too short: 940
+reads with adapter trimmed: 34030
+bases trimmed due to adapters: 1119497
+
+Duplication rate: 0.512629%
+
+Insert size peak (evaluated by paired-end reads): 264
+
+JSON report: sample1.fastp.json
+HTML report: sample1.fastp.html
+
+fastp --in1 sample1_1.fastq.gz --in2 sample1_2.fastq.gz --out1 sample1_1.fastp.fastq.gz --out2 sample1_2.fastp.fastq.gz --json sample1.fastp.json --html sample1.fastp.html --thread 4 --detect_adapter_for_pe --cut_front --cut_front_window_size=1 --cut_front_mean_quality=10 --cut_tail --cut_tail_window_size=1 --cut_tail_mean_quality=10 --n_base_limit 0 --qualified_quality_phred 20 --average_qual 20 --length_required 50 --detect_adapter_for_pe 
+fastp v0.24.0, time used: 6 seconds

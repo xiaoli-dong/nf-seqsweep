@@ -1,0 +1,47 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 574677
+total bases: 77794974
+Q20 bases: 69754405(89.6644%)
+Q30 bases: 68061733(87.4886%)
+
+Read2 before filtering:
+total reads: 574677
+total bases: 77530803
+Q20 bases: 71902399(92.7404%)
+Q30 bases: 70355992(90.7459%)
+
+Read1 after filtering:
+total reads: 535082
+total bases: 73640784
+Q20 bases: 67218945(91.2795%)
+Q30 bases: 65680395(89.1902%)
+
+Read2 after filtering:
+total reads: 535082
+total bases: 73486184
+Q20 bases: 69081719(94.0064%)
+Q30 bases: 67691931(92.1152%)
+
+Filtering result:
+reads passed filter: 1070164
+reads failed due to low quality: 44560
+reads failed due to too many N: 3014
+reads failed due to too short: 31616
+reads with adapter trimmed: 6862
+bases trimmed due to adapters: 182487
+
+Duplication rate: 12.3483%
+
+Insert size peak (evaluated by paired-end reads): 150
+
+JSON report: measle.fastp.json
+HTML report: measle.fastp.html
+
+fastp --in1 measle_1.fastq.gz --in2 measle_2.fastq.gz --out1 measle_1.fastp.fastq.gz --out2 measle_2.fastp.fastq.gz --json measle.fastp.json --html measle.fastp.html --thread 4 --detect_adapter_for_pe --cut_front --cut_front_window_size=1 --cut_front_mean_quality=10 --cut_tail --cut_tail_window_size=1 --cut_tail_mean_quality=10 --n_base_limit 0 --qualified_quality_phred 20 --average_qual 20 --length_required 50 --detect_adapter_for_pe 
+fastp v0.24.0, time used: 18 seconds

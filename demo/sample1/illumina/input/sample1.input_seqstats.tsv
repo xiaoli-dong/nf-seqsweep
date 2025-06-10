@@ -1,0 +1,2 @@
+file	format	type	num_seqs	sum_len	min_len	avg_len	max_len
+sample1	FASTQ	DNA	868464	129401136	149	149.0	149
